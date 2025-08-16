@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.google.com/specimen/Outfit" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+*{
+    margin:0%;
+    padding:0%;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid hsl(216, 50%, 16%) ;
+    height: 450px;
+    width: 250px;
+    justify-content: space-around;
+    border-radius: 20px;
+    padding: 10px 15px;
+    background-color:hsl(216, 50%, 16%);
+    font-family: 'Outfit',sans-serif;
+    scroll-behavior: smooth;
+
+}
+.img{
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+#img1{
+    border-radius: 10px;
+}
+.time{
+    display: flex;
+    justify-content: space-between;
+}
+#foot{
+    margin-left: 40px;
+    margin-top: 10px;
+    
+}
+
+#img2{
+     height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    float: left;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color:hsl(217, 54%, 11%);
+}
+h3{
+    font-weight: 600;
+    color: rgb(216, 216, 216);
+    font-size: 18px;
+}
+.para,#foot{
+    color: hsl(215, 51%, 70%);
+    font-size: 14px;
+}
+.para1{
+    color: hsl(178, 100%, 50%);
+    font-weight: bolder;
+    font-size: 14px;
+}
+.icon{
+    height: 14px;
+}
+.para{
+    display: flex;
+    align-self: center;
+    gap:5px;
+}
+.f2:hover{
+     color: hsl(178, 100%, 50%);
+}
+h3:hover{
+     color: hsl(178, 100%, 50%);
+}
+.img1:hover{
+    color:hsl(178, 100%, 50%) ;
+}
+.f1{
+    color:hsl(215, 51%, 70%);
+}
+.f2{
+    color: rgb(216, 216, 216);
+}
+@media(max-width:480px){
+    .card{
+        max-width: 90%;
+        padding: 15px;
+    }
+    h3{
+        font-size: 1rem;
+    }
+    .para,.para1{
+        font-size: 0.8rem;
+    }
+    .foot,.f2{
+        font-size: 0.75rem;
+    }
+}
+  </style>
+</head>
+<body>
+<div class="card">
+        <div class="img">
+        <img  id="img1" src="./images/image-equilibrium.jpg" alt="blue crystal" height="250" width="300" >
+        </div>
+        <h3>Equilibrium#3429</h3>
+        <p class="para">our Equilibrium collection promotes balance and calm</p>
+       <div class="time">
+        <p class="para1"><img class="icon" src="images/icon-ethereum.svg"> 0.041ETH</p>
+        <P class="para"> <img src="./images/icon-clock.svg">3 days left</P>
+       </div>
+        <hr>
+        <footer class="foot">
+           <img id="img2" src="./images/image-avatar.png" alt="">
+            <p id="foot" ><span  class="f1"> Creation of </span><span class="f2">Jules Wyvern</span></p>
+        </footer>   
+  </div>
+</body>
+</html>
